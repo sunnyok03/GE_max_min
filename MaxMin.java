@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class MaxMin {
     public static void main(String[] args) {
-        test(1,2,3);
-        test(2,3,1);
-        test(3,1,2);
+        test(1.1f,2.2f,3.3f);
+        test(2.2f,3.3f,1.1f);
+        test(3.3f,1.1f,2.2f);
     }
 
     /*
-    @desc: find maximum value among three numbers
-    @params:a,b,c (three integers)
+    @desc: find maximum value among three float numbers
+    @params:a,b,c (three float)
     @return: max(a,b,c)
      */
-    public static Integer findMaxValue(int a,int b,int c){
-        Integer res = a;
+    public static Float findMaxValue(float a,float b,float c){
+        Float res = a;
         if(res.compareTo(b) < 0){
             res = b;
         }
@@ -30,9 +30,9 @@ public class MaxMin {
     @params: a,b,c (three numbers)
     @return:
      */
-    public static void test(int a,int b,int c){
-        int maxVal = findMaxValue(a,b,c);
-        System.out.printf("Max among %d, %d, %d is %d",a,b,c,maxVal);
+    public static void test(float a,float b,float c){
+        float maxVal = findMaxValue(a,b,c);
+        System.out.printf("Max among %f, %f, %f is %f",a,b,c,maxVal);
         System.out.println();
     }
 }
