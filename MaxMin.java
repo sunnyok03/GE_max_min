@@ -14,12 +14,12 @@ public class MaxMin {
     @params:a,b,c (three integers)
     @return: max(a,b,c)
      */
-    public static int findMaxValue(int a,int b,int c){
-        int res = a;
-        if(res  < b){
+    public static Integer findMaxValue(int a,int b,int c){
+        Integer res = a;
+        if(res.compareTo(b) < 0){
             res = b;
         }
-        if(res < c){
+        if(res.compareTo(c) < 0){
             res = c;
         }
         return res;
