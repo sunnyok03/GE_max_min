@@ -37,7 +37,20 @@ public class MaxAmongAll<T extends Comparable<T>> {
         if(maxVal == null){
             return;
         }
-        System.out.printf("Max among all is %s.",maxVal);
+        printMax(maxVal,arr);
+    }
+
+    /*
+    @desc: extended a new method to print after testing
+    @params: maxValue and arr
+    @return:
+     */
+    public static <T> void printMax(T maxVal,T ...arr){
+        System.out.print("Max among ");
+        for(T element : arr){
+            System.out.print(element + " ");
+        }
+        System.out.printf("is %s.",maxVal);
         System.out.println();
     }
 
