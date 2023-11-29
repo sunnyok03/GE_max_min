@@ -1,4 +1,4 @@
-package com.max_min;
+package com.bridgelabz;
 
 public class MaxMin {
     public static void main(String[] args) {

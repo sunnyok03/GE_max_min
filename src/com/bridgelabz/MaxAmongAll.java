@@ -1,5 +1,8 @@
-package com.max_min;
+package com.bridgelabz;
 
+/*
+@desc:This class uses Generics to compare elements and find maximum
+ */
 public class MaxAmongAll<T extends Comparable<T>> {
 
     private T[] arr;
